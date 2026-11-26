@@ -1,0 +1,10 @@
+"Search query: (""sports injury""[Title/Abstract] OR ""sports injuries""[Title/Abstract] OR ""athletic injury""[Title/Abstract] OR ""athletic injuries""[Title/Abstract]) AND (""correlation""[Title/Abstract] OR ""association""[Title/Abstract]) AND (""2021""[Date - Publication] : ""2025""[Date - Publication])"
+Year,Count
+2026,10
+2025,96
+2024,66
+2023,67
+2022,53
+2021,59
+2020,8
+2019,2

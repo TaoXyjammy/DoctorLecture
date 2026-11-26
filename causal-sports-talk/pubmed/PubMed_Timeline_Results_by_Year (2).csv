@@ -1,0 +1,5 @@
+"Search query: (""sports injury ""[Title/Abstract] OR ""sports injuries""[Title/Abstract] OR ""athletic injury""[Title/Abstract] OR ""athletic injuries""[Title/Abstract]) AND (""causal inference""[Title/Abstract] OR ""causality""[Title/Abstract] OR ""causal effect""[Title/Abstract] OR ""causal effects""[Title/Abstract]) AND (""2021""[Date - Publication] : ""2025""[Date - Publication])"
+Year,Count
+2025,2
+2024,2
+2023,3

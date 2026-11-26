@@ -2,9 +2,9 @@
 
 当前工程采用所提供 MUL-Talk 模板的 mul-beamer.cls 和原版封面背景、模板标识。作者教育经历见封面署名。进入本目录，用 XeLaTeX 编译 main.tex 两次。环境需有 Noto Sans CJK SC、Beamer、fontspec、TikZ、marvosym 和 booktabs。PowerPoint 为 PDF 的逐页放映版，编辑入口为 main.tex。
 
-## 当前版本的 Google Scholar 统计口径
+## 当前版本的 PubMed 图表
 
-以 2021–2025 五个完整年为范围，使用英文检索式 `"sports injury" correlation` 和 `"sports injury" "causal inference"`。记录两组页面显示的五年估计命中数，第二组另按五个单年检索。Google Scholar 返回 403，当前正文用有出处的跑鞋队列解释研究背景。上述英文检索只覆盖特定表述，不代表全学科普查。
+四份原始导出位于 pubmed 目录，每份首行保存原检索式。按时间线的 Year 筛选 2021–2025，再汇总 Count。文件无后缀、(1)、(2)、(3) 分别对应精确关联、宽泛因果、精确因果、宽泛关联。精确因果文件未列出的两个窗口内年份按零绘图。宽泛检索含 sports，可能涵盖损伤之外的体育研究。精确检索使用四个运动损伤词组。两组方法词分别覆盖 correlation / association，以及 causal inference / causality / causal effect / causal effects。所有检索限题名或摘要。百分数为两组命中数之比。
 
 ## 早期版本的 Web of Science 备选检索方案
 

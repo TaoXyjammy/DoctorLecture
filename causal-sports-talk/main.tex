@@ -44,34 +44,28 @@
 
 \section{研究现状}\subsection{当前研究背景}
 
-\begin{frame}{研究现状｜从训练与损伤的关联，到评估防伤策略}
+\begin{frame}{研究背景｜运动损伤文献中，关联词比因果词更常见}
 \begin{columns}[c,onlytextwidth]
-\column{.49\textwidth}
-\point{相关性研究是常见起点}{运动队逐日记录训练和伤情。比较不同跑量、装备或恢复状态下的伤例，可以发现值得追踪的风险因素。}
-\point{因果推断已进入运动损伤研究}{教练还要决定是否调整训练。要估计改变策略的效果，先说明比较哪两种做法，再检查哪些因素同时影响选择与伤情。}
-\column{.47\textwidth}\centering
-\begin{tikzpicture}[every node/.style={align=center,font=\small},node distance=4mm]
-\node[factor,text width=5.2cm](a){264 名马拉松备赛跑者\\记录日常用鞋与受伤情况};
-\node[factor,text width=5.2cm,below=of a](b){观察结果\\轮换跑鞋者的损伤危险率较低};
-\node[factor,text width=5.2cm,below=of b](c){干预问题\\让同类跑者轮换跑鞋，能否防伤？};
-\draw[patharrow](a)--(b);\draw[patharrow](b)--(c);
-\end{tikzpicture}\end{columns}
-\credit{Malisoux 等（2015），跑鞋前瞻队列；Nolte（2024），§4.1。较早受伤者换鞋机会更少，分组本身就可能影响观察结果。}
+\column{.44\textwidth}
+\point{五年文献分布}{限定运动损伤精确词组时，关联词命中 341 篇次，因果词命中 7 篇次。放宽到含 sports 的检索后，两者相差仍大。}
+\point{怎么理解约 2\%？}{每 100 个关联词命中，对应约 2 个因果词命中。宽泛口径为 2.20\%，精确口径为 2.05\%。}
+\column{.54\textwidth}\centering
+\includegraphics[width=\linewidth]{pubmed-total.pdf}
+\end{columns}
+\credit{PubMed 题名／摘要，2021–2025。比值为因果词命中数除以关联词命中数；检索集合可重叠，实际采用的方法需逐篇判读。}
 \end{frame}
-
 
 \subsection{现有研究的局限性}
-
-\begin{frame}{局限性｜观察到的负荷差异可能混入赛程和伤病史}
-\point{训练干预难随机化}{高水平运动员受赛程与伦理约束，伤病史和恢复情况也影响实际训练选择。}
-\point{有序指标与时间依赖}{分箱规则影响负荷等级。单日记录难以辨别训练在先还是疼痛在先；分钟级穿戴信号还存在自相关。}
-\point{研究切入点}{明确定义负荷策略、结局和随访窗口，先提出候选因果结构，再估计效应并开展前瞻验证。}
-\credit{Xie et al. (2025)，Introduction，pp. 1–2；Xie et al. (2026)，§1。}
+\begin{frame}{研究缺口｜因果词命中增加，损伤专项研究仍少见}
+\begin{columns}[c,onlytextwidth]
+\column{.44\textwidth}
+\point{从发文趋势看}{宽泛口径从每年 15 篇次升至 36 篇次，最近两年持平。限定损伤词组后，各年只有 0–3 篇次。}
+\point{从训练决策看}{既往伤病影响训练安排，早期疼痛也会使运动员主动减量。即使观察到跑量与损伤相关，教练仍需知道：在恢复状况相近时，调整冲刺负荷会怎样改变后续损伤风险？}
+\column{.54\textwidth}\centering
+\includegraphics[width=\linewidth]{pubmed-trend.pdf}
+\end{columns}
+\credit{PubMed 年度导出，2021–2025；精确因果词组在 2021、2022 年无记录。研究问题参照 Nielsen 等（2020）与 Meeuwisse 等（2007）的动态损伤模型。}
 \end{frame}
-
-
-
-
 
 \section{研究必要性}
 
