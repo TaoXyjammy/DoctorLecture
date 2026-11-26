@@ -63,20 +63,16 @@
 
 \section{研究必要性}
 
-\begin{frame}{相关不代表因果｜超马补给与完赛表现}
-\centering
-\begin{tikzpicture}[font=\small]
-\node[factor] (e) at (0,1.5){参赛经验};
-\node[factor] (n) at (-3.6,0){赛中营养摄入};
-\node[factor] (t) at (0,0){训练};
-\node[factor] (p) at (2.2,0){赛前能力};
-\node[factor] (o) at (4.5,0){比赛表现};
-\draw[patharrow](e)--(n);\draw[patharrow](e)--(t);\draw[patharrow](t)--(p);\draw[patharrow](p)--(o);
-\draw[patharrow](n) to[bend right=22] (o);
-\end{tikzpicture}
-\raggedright\point{一个可检验的解释}{经验丰富者可能更擅长补给，也有更充分的训练。两条路径同时产生摄入与成绩的关联。}
-\point{怎样设计比较？}{在该图成立时，按经验调整可阻断这条后门路径。若训练也影响补给，调整集需要重审。}
-\credit{据 Simon Nolte (2024)，More Than Just Associations，§4.2，图 8，正文 p. 18 简化重绘。}
+\begin{frame}{相关不等于因果｜跑步装备与下肢损伤}
+\begin{columns}[c,onlytextwidth]
+\column{.56\textwidth}\footnotesize\raggedright
+\textbf{仅依赖相关性分析在运动损伤研究中存在显著的方法局限。}\par
+一方面，观察性数据中的统计关联极易受到混杂偏倚、反向因果以及测量噪声等因素的干扰，导致将非因果关联误判为“致伤因素”或“干预靶点”（Losciale et al., 2023; Zaniletti et al., 2023）。\par
+例如，在跑步与下肢损伤研究中，观察性数据常显示“使用高缓震跑鞋”或“佩戴护膝/肌内效贴”与下肢损伤发生率呈显著正相关；若仅按相关性解释，极易误判为“护具或高缓震鞋增加了损伤风险”，而实际上这源于\textbf{混杂偏倚与反向因果}——即既往有损伤史或处于早期疲劳疼痛状态的跑者更倾向于选择高缓震装备与护具，且既往损伤史本身才是驱动后续损伤的核心因素（Nielsen et al., 2020; Losciale et al., 2023）。
+\column{.42\textwidth}\centering
+\includegraphics[width=\linewidth]{causal_xyz_nature_cn.png}
+\end{columns}
+\credit{\textbf{图 1｜运动损伤研究中混杂与反向反馈的因果结构示意图。}X 为护具或缓震装备（观察到的暴露/防护变量），Y 为后续运动损伤（结果变量），Z 为既往伤病史或早期疼痛（混杂变量）。橙色实线表示混杂路径（$Z\to X$ 与 $Z\to Y$），灰色虚线表示未控制混杂时的观测统计关联（X — Y），绿色点线表示损伤或疼痛状态引发的反向/适应性反馈（$Y\cdots\!\to X$）。}
 \end{frame}
 
 
