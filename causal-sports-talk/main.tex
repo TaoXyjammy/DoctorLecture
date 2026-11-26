@@ -44,14 +44,19 @@
 
 \section{研究现状}\subsection{当前研究背景}
 
-\begin{frame}{当前研究背景｜训练量与损伤概率如何联结？}
-\begin{columns}[T,onlytextwidth]\column{.52\textwidth}
-\includegraphics[width=\linewidth,height=.59\textheight,keepaspectratio]{oce.png}
-\credit{跑者训练日志，原论文图 5。}
-\column{.45\textwidth}
-\point{42,766 条日尺度记录}{训练负荷有连续量，恢复与伤情有等级。数据源覆盖 74 名中长跑运动员。}
-\point{图中的问题}{同样是增加冲刺量，低→中和中→高对应的受伤概率差是否相同？}
-\end{columns}\credit{\paperone}
+\begin{frame}{研究现状｜从训练与损伤的关联，到评估防伤策略}
+\begin{columns}[c,onlytextwidth]
+\column{.49\textwidth}
+\point{相关性研究是常见起点}{运动队逐日记录训练和伤情。比较不同跑量、装备或恢复状态下的伤例，可以发现值得追踪的风险因素。}
+\point{因果推断已进入运动损伤研究}{教练还要决定是否调整训练。要估计改变策略的效果，先说明比较哪两种做法，再检查哪些因素同时影响选择与伤情。}
+\column{.47\textwidth}\centering
+\begin{tikzpicture}[every node/.style={align=center,font=\small},node distance=4mm]
+\node[factor,text width=5.2cm](a){264 名马拉松备赛跑者\\记录日常用鞋与受伤情况};
+\node[factor,text width=5.2cm,below=of a](b){观察结果\\轮换跑鞋者的损伤危险率较低};
+\node[factor,text width=5.2cm,below=of b](c){干预问题\\让同类跑者轮换跑鞋，能否防伤？};
+\draw[patharrow](a)--(b);\draw[patharrow](b)--(c);
+\end{tikzpicture}\end{columns}
+\credit{Malisoux 等（2015），跑鞋前瞻队列；Nolte（2024），§4.1。较早受伤者换鞋机会更少，分组本身就可能影响观察结果。}
 \end{frame}
 
 
@@ -65,13 +70,7 @@
 \end{frame}
 
 
-\begin{frame}{近五个完整年度｜体育科学文献计量的检索口径}
-\IfFileExists{wos-trend.pdf}{\centering\includegraphics[width=.94\linewidth,height=.72\textheight,keepaspectratio]{wos-trend.pdf}}{
-\point{数据库与范围}{Web of Science Core Collection；Sport Sciences 学科类别；发表年份 2021–2025；文章类型 Article。}
-\point{两个主题检索集合}{A：相关分析、相关系数等明确术语。B：因果推断、因果发现、目标试验模拟等术语。集合允许重叠。}
-\point{统计状态}{当前没有可核验的 WoS 年度记录。两集合总数与 B 的年度趋势待数据库导出后计算。}
-\credit{完整检索式、年度统计与绘图步骤见同目录 WOS.md。} }
-\end{frame}
+
 
 
 \section{研究必要性}
@@ -106,17 +105,23 @@
 
 \section{研究成果}
 
-\begin{frame}{论文成果总览｜足球技战术、跑者损伤与生理时序}
-\footnotesize
-\begin{tabular}{@{}p{2.0cm}p{7.9cm}p{3.1cm}@{}}\toprule 状态 & 论文主题 & 署名与出处\\\midrule
-已发表 2025 & 分位数阈值与潜在高斯 DAG 的运动损伤因果推断 & 一作、通讯；Frontiers in Public Health\\
-已发表 2026 & 可穿戴运动数据动态效应的迭代因果发现 & 共同一作（署名第 1）；Computational Statistics\\
-在审 & DAG 引导的中介分析：损伤对跑者训练的效应 & 第一作者；BMC Sports Science, Medicine and Rehabilitation\\
-在审 & 足球预期进球预测的机器学习算法比较 & 第一作者；Sports\\
-会议 2023 & Apriori 算法在足球比赛中的应用 & 第一作者；ACM AAIA\\
-硕士论文 2018 & 基于数据挖掘视角下足球比赛进攻模式研究 & 沈阳体育学院\\\bottomrule
-\end{tabular}
-\credit{状态据本人简历；期刊论文 DOI 见后页；会议 DOI 10.1145/3603273.3631190。}
+\begin{frame}{科研成果总览｜1–3}
+\small\raggedright
+{\color{teal}\bfseries 1. Xie T, et al. A causal inference method for athletic injuries based on quantile threshold functions and latent Gaussian DAG models.}\par
+Frontiers in Public Health, 2025, 13:1647200. 第一作者、通讯作者｜已发表 DOI: 10.3389/fpubh.2025.1647200\par\medskip
+{\color{teal}\bfseries 2. Xie T, et al. Iterative causal discovery uncovers dynamic effects in wearable exercise data.}\par
+Computational Statistics, 2026, 41:83. 共同第一作者（署名第1）、通讯作者｜已发表 DOI: 10.1007/s00180-026-01760-4\par\medskip
+{\color{teal}\bfseries 3. Xie T, et al. Uncovering the Causal Effects of Injuries on Runners’ Training Through DAG-Guided Mediation Analysis.}\par
+BMC Sports Science, Medicine and Rehabilitation. 第一作者｜在审\par\medskip
+\end{frame}
+\begin{frame}{科研成果总览｜4–6}
+\small\raggedright
+{\color{teal}\bfseries 4. Xie T, et al. Expected Goals Prediction in Football—A Comparative Study Using Machine Learning Algorithms.}\par
+Sports. 第一作者｜在审\par\medskip
+{\color{teal}\bfseries 5. Xie T, et al. Application of the Apriori Algorithm in Soccer Games.}\par
+AAIA 2023, pp. 54–59. ACM. 第一作者｜会议论文 DOI: 10.1145/3603273.3631190\par\medskip
+{\color{teal}\bfseries 6. 基于数据挖掘视角下足球比赛进攻模式研究［硕士学位论文］。}\par
+沈阳体育学院，2018。\par\medskip
 \end{frame}
 
 
