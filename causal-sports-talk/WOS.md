@@ -1,6 +1,6 @@
 # 中文编译与文献计量复现
 
-当前工程使用可用的 Metropolis Beamer 主题。指定的 Overleaf MUL-Talk 项目下载被代理拒绝，尚未取得原模板。进入本目录，以 XeLaTeX 编译 main.tex 两次，需 Noto Sans CJK SC、Metropolis 和 TikZ。PowerPoint 是中文 Beamer PDF 的逐页放映版，内容在 main.tex 编辑。
+当前工程采用所提供 MUL-Talk 模板的 mul-beamer.cls 和原版封面背景、模板标识。作者教育经历见封面署名。进入本目录，用 XeLaTeX 编译 main.tex 两次。环境需有 Noto Sans CJK SC、Beamer、fontspec、TikZ、marvosym 和 booktabs。PowerPoint 为 PDF 的逐页放映版，编辑入口为 main.tex。
 
 ## 数据库和年份
 

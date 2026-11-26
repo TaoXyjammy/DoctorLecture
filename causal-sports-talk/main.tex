@@ -1,6 +1,5 @@
 % !TeX program = xelatex
-\documentclass[aspectratio=169,10pt]{beamer}
-\usetheme[progressbar=frametitle,numbering=fraction,sectionpage=none]{metropolis}
+\documentclass[handout,defaultFootings,slideTotalNumber,ENlocalization,lightTitle,hideSidebar,classicFont]{mul-beamer}
 \usepackage{fontspec}
 \usepackage{booktabs}
 \usepackage{tikz}
@@ -12,13 +11,13 @@
 \definecolor{paper}{HTML}{FAFAF7}
 \definecolor{teal}{HTML}{116D68}
 \definecolor{amber}{HTML}{D28228}
-\setbeamercolor{normal text}{fg=ink,bg=paper}
-\setbeamercolor{frametitle}{fg=white,bg=ink}
-\setbeamercolor{alerted text}{fg=teal}
-\setbeamercolor{progress bar}{fg=amber,bg=ink!18}
 \setbeamertemplate{navigation symbols}{}
 \setlength{\parskip}{3pt}
 \graphicspath{{figures/}}
+\renewcommand{\funneldisplay}{\sffamily}
+\setbeamerfont{frametitle}{size=\large,series=\bfseries}
+\setSlogan{}
+\conference{从跑者训练日志到可穿戴生理时序}
 \newcommand{\credit}[1]{\par\vspace{2pt}{\scriptsize\color{ink!75}#1}\par}
 \newcommand{\point}[2]{\par\textcolor{teal}{\textbf{#1}}\par #2\par\vspace{3pt}}
 \newcommand{\talk}[2]{\note{#1\par #2}}
@@ -29,21 +28,13 @@
 \title{运动损伤与康复的因果推断}
 \subtitle{从跑者训练日志到可穿戴生理时序}
 \author{谢淘}
-\institute{高校教师岗位科研汇报}
+\institute[高校教师岗位科研汇报]{韩国庆一大学体育训练博士阶段｜高校教师岗位科研汇报}
 \date{}
 % To show speaker notes, uncomment the following line and recompile.
 % \setbeameroption{show notes}
 \begin{document}
-\begin{frame}[plain]
-  \relax{\usebeamerfont{title}\inserttitle\par}
-  \smallskip
-  {\usebeamerfont{subtitle}\insertsubtitle\par}
-  \medskip
-  {\color{amber}\rule{.19\textwidth}{1.5pt}}\par
-  \bigskip
-  \insertauthor\par
-  \insertinstitute
-
+\begin{frame}
+\titlepage
 \end{frame}
 
 \begin{frame}{汇报目录}
